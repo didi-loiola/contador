@@ -10,3 +10,6 @@ function decrement() {
     currentNumber -= 1
     currentNumberWrapper.innerHTML = currentNumber
 }
+
+document.getElementById('adicionar').addEventListener('click', increment)
+document.getElementById('subtrair').addEventListener('click', decrement)
