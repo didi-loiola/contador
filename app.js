@@ -2,16 +2,20 @@ var currentNumberWrapper = document.getElementById('currentNumber')
 var currentNumber = 0
 
 function increment() {
-    if(currentNumber < 10){
-        currentNumber += 1
-        currentNumberWrapper.innerHTML = currentNumber
+    currentNumberWrapper.style.color = 'black'
+    currentNumber += 1
+    currentNumberWrapper.innerHTML = currentNumber
+    if(currentNumber >= 1){
+        currentNumberWrapper.style.color = 'blue'
     }
 }
 
 function decrement() {
-    if(currentNumber > 0){
-        currentNumber -= 1
-        currentNumberWrapper.innerHTML = currentNumber
+    currentNumberWrapper.style.color = 'black'
+    currentNumber -= 1
+    currentNumberWrapper.innerHTML = currentNumber
+    if(currentNumber <= -1){
+        currentNumberWrapper.style.color = 'red'
     }
 }
 
